@@ -1,0 +1,494 @@
+<html>
+    <head>
+        
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@100&family=Tilt+Neon&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="home-styles.css">
+        
+        <title>
+             EDU-GO Teacher Training School
+        </title>
+
+        <style>
+        body {
+            background-color: #005B41;
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif;
+
+            .header {
+              background-color: #0F0F0F;
+              color: #fff;
+              text-align: center;
+              padding: 20px;
+              font-family: 'Tilt Neon', sans-serif;
+              width: 98%;
+           }
+
+           .header h1 {
+              margin: 0;
+              font-size: 100px;
+           }
+
+           .header h1:hover {
+              margin: 0;
+              font-size: 110px;
+              color: 008170;
+              transition: all 0.5s ease;
+              cursor: default;
+           }
+
+           .header p {
+               margin: 0;
+               font-size: 50px;
+           }
+
+           .header p:hover {
+               margin: 0;
+               font-size: 60px;
+               color: 008170;
+               transition: all 0.5s ease;
+               cursor: default;
+           }
+
+           .user-actions {
+               display: flex;
+               justify-content:center;
+               align-items: center;
+               background-color: #0F0F0F;
+               width: 100%;
+           }
+
+           .btn {
+              background-color: transparent;
+              border: 2px solid ;
+              color: #008170;
+              padding: 10px 30px;
+              text-align: center;
+              text-decoration: none;
+              display: inline-block;
+              font-size: 28px;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+              margin-right: 15px;
+              margin-left: 15px;
+              margin-bottom: 15px;
+           }
+
+           .btn:hover {
+              background-color: #008170;
+              padding: 10px 60px;
+              color: black;
+              margin-right: 0px;
+              margin-left: 0px;
+           }
+
+           .navbar {
+               position: sticky;
+               top: 0px;
+               background-color: #0F0F0F;
+               overflow: hidden;
+               border-top: wheat 2px solid;
+               z-index: 10;
+               width: 100%;
+               box-shadow: black 1px 1px 20px;
+           }
+
+           .navbar ul {
+               list-style-type: none;
+               margin: 0;
+               padding: 10;
+               display: flex;
+               justify-content: center;
+           }
+
+           .navbar li {
+               margin: 10px 10px;
+           }
+
+           .navbar li:hover {
+               padding: 0px 15px;
+               transition: all 0.6s ease;
+           }
+
+           .navbar a {
+               color: #fff;
+               text-decoration: none;
+               padding: 10px 20px;
+               font-size: 28px;
+           }
+
+           .navbar a:hover {
+               background-color: wheat;
+               color: #0F0F0F;
+               border-radius: 5px;
+           } 
+
+           .search-container {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               margin-left: 40px;
+           }
+
+           .search-container input[type=text] {
+               padding: 6px;
+               font-size: 22px;
+               border-radius: 10px;
+               border: none;
+           }
+
+           .search-container button {
+               display: flex;
+               justify-content: center;
+               align-items: center;
+               padding: 10px 20px;
+               margin-top: 8px;
+               margin-left: 10px;
+               margin-bottom: 5px;
+               background: #333;
+               color: white;
+               border: none;
+               cursor: pointer;
+               border-radius: 10px;
+               font-size: 22px;
+           }
+
+           .search-container button:hover {
+            background-color: #008170;
+            color: #fff;
+           }
+
+           .fixed {
+              position: sticky;
+              margin-top: 0px;
+              width: 100%;
+              z-index: 10;
+           }
+
+           .div-img {
+            display:flexbox;
+            width: 98%;
+            margin-top: 15px;
+           }
+
+           .div-img img {
+            width: 600px;
+            height: 350px;
+            box-shadow: black 0px 0px 5px;
+           }
+
+           .div-img img:hover {
+            height: 380px;
+            transition: all 0.5s ease;
+            border-radius: 10px;
+           }
+
+
+           .ap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+           }
+
+           .ap button {
+            padding: 20px 50px;
+            font-size: 28px;
+            border-radius: 100px;
+            background-color: black;
+            border: wheat 4px solid;
+            color: wheat;
+            font-family: 'Roboto', sans-serif;
+           }
+
+           .ap a {
+            color: wheat;
+            text-decoration: none;
+           }
+
+           .ap a:hover {
+            color: black;
+           }
+
+           .ap button:hover {
+            font-size: 32px;
+            border-radius: 100px;
+            padding: 20px 80px;
+            background-color: wheat;
+            border: wheat 4px solid;
+            color: black;
+            transition: all 0.6s ease;
+           }
+
+           .coucon {
+            width: 95%;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 20px;
+            background-color: 0F0F0F;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 30px;
+           }
+
+           .coucon:hover {
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 60px 10px;
+            background-color: 0F0F0F;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+            box-shadow: black 1px 1px 5px;
+           }
+
+           .coucon img {
+            width: 500px;
+            height: 280px;
+            border-radius: 20px;
+            margin-right: 10px;
+           }
+
+           .coucon p {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: medium;
+            color: #fff;
+           }
+
+           .coucon button {
+              background-color: transparent;
+              border: 2px solid ;
+              color: wheat;
+              padding: 10px 20px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 28px;
+              border-radius: 5px;
+              margin-left: 20px;
+              cursor: pointer;
+           }
+
+           .coucon button:hover {
+              background-color: wheat;
+              border: 2px solid ;
+              color: black;
+              padding: 30px 60px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 36px;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+              margin-left: 20px;
+           }
+
+           .coulib {
+            width: 95%;
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 20px;
+            background-color: 0F0F0F;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 30px;
+           }
+
+           .coulib:hover {
+            margin-left: 5px;
+            margin-right: 5px;
+            padding: 60px 10px;
+            background-color: 0F0F0F;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            border-radius: 30px;
+            transition: all 0.6s ease;
+            box-shadow: black 1px 1px 5px;
+           }
+
+           .coulib img {
+            width: 500px;
+            height: 280px;
+            border-radius: 20px;
+            margin-left: 10px;
+           }
+
+           .coulib p {
+            font-family: 'Tilt Neon', sans-serif;
+            font-size: medium;
+            color: #fff;
+           }
+
+           .coulib button {
+              background-color: transparent;
+              border: 2px solid ;
+              color: wheat;
+              padding: 10px 20px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 28px;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+              margin-right: 20px;
+           }
+
+           .coulib button:hover {
+              background-color: wheat;
+              border: 2px solid ;
+              color: black;
+              padding: 30px 60px;
+              text-align: center;
+              text-decoration: none;
+              font-size: 36px;
+              border-radius: 5px;
+              transition: all 0.3s ease;
+              margin-right: 20px;
+              cursor: pointer;
+           }
+
+           .sociel {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            border-radius: 50%;
+            border-top: black 10px solid;
+           }
+
+           .sociel-icon {
+            margin-top: 20px;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+           }
+
+           .sociel-icon:hover {
+            width: 80px;
+            height: 80px;
+            box-shadow: white 0px 0px 15px;
+            transition: all 0.3s ease;
+            cursor: pointer;
+           }
+
+           .aboutus {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            background-color: black;
+           }
+
+           .aboutus-dt {
+            font-size: 22px;
+            color: wheat;
+            margin-left: 50px;
+            margin-right: 50px;
+            padding: 5px;
+           }
+
+           .aboutus-dt:hover {
+            cursor: pointer;
+            color: #fff;
+            font-weight: bold;
+            transition: all 0.3s ease;
+           }
+
+           .footer {
+            display: flex;
+            justify-content: space-evenly;
+            align-items: center;
+            padding: 10px;
+            width: 100%;
+            background-color: black;
+            color: wheat;
+            font-size: 18px;
+           }
+
+
+        }
+        </style>
+
+        
+    </head>
+    <body>
+       
+        <div class="header">
+             <h1>EDU-GO</h1>
+             <p>Teacher Training School</p>
+         </div>
+
+         <div class="user-actions">
+            <a href="Student_Login_Page.html" class="btn">Login</a>
+            <a href="Student_Register_Page.html" class="btn">Register</a>
+        </div> 
+         <div class="navbar">
+            <ul>
+              <li><a href="Home_Page.html">Home</a></li>
+              <li><a href="#">Courses</a></li>
+              <li><a href="#">Workshops</a></li>
+              <li><a href="#">Events</a></li>
+              <li><a href="#">Library</a></li>
+              <li><a href="Contact_Us_Page.html">Contact us</a></li>
+              <div class="search-container">
+                <input type="text" placeholder="Search Courses">
+                <button type="submit" name="search-course"><b>></b></button>
+            </div>
+            </ul>
+        </div>
+        
+        <center>
+        <div class="div-img">
+            <img src="Uni1.jpeg" alt="Floating img">
+            <img src="Uni2.jpg" alt="Floating img">
+            <img src="Uni3.jpg" alt="Floating img">
+            <img src="Uni4.jpg" alt="Floating img">
+            <img src="Uni5.jpg" alt="Floating img">
+            <img src="Uni1.jpeg" alt="Floating img">
+        </div>
+
+        <div class="ap">
+            <div><a href="Student_Register_Page.html"><button>Apply Now</button></a></div>
+        </div>
+
+        <div class="coucon">
+            <div><img src="Course Explore.jpg" alt=""></div>
+            <div><p>I chose this course because it aligns perfectly with my career goals,<br>offering the knowledge and skills I need to excel in my chosen field.</p></div>
+            <div><button>Explore</button></div>
+        </div>
+        <br>
+        <div class="coulib">
+            <div><button>Library</button></div>
+            <div><p>Libraries are invaluable cultural repositories.<br>providing access to a vast and diverse collection <br>of knowledge that spans generations.</p></div>
+            <div><img src="Library.jpg" alt=""></div>
+        </div>
+        <br>
+        </center>
+
+        <div class="sociel">
+            <div ><img src="facebook.png" alt="facebook" class="sociel-icon"></div>
+            <div><img src="instagram.png" alt="instagram" class="sociel-icon"></div>
+            <div><img src="cross.png" alt="X" class="sociel-icon"></div>
+            <div><img src="email.png" alt="email" class="sociel-icon"></div>
+            <div><img src="call.png" alt="call" class="sociel-icon"></div>
+        </div>
+        <div class="aboutus">
+            <div><a href="Help_Page.html"><p class="aboutus-dt">HELP</p></a></div>
+            <div><a href="Privacy_page.html"><p class="aboutus-dt">PRIVACY</p></a></div>
+            <div><a href="About_Us_Page.html"><p class="aboutus-dt">ABOUT US</p></a></div>
+        </div>
+        <div class="footer">
+            <div><p>© 2023 EDU-GO TTS. All rights reserved.</p></div>
+        </div>
+        
+    </body>
+</html>
